@@ -2,11 +2,16 @@ import React from 'react'
 import './App.css';
 import './index.css';
 import Navbar from './components/Navbar';
+import { ChakraProvider } from "@chakra-ui/react"
+
 
 
 function App() {
   return (
-      <Navbar />
+    <ChakraProvider>
+        <Navbar />
+    </ChakraProvider>
+      
   )
 }
 
