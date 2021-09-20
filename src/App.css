@@ -1,3 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #d3d6bf, #b2cc1d);
+}
+
+.nav-item{
+    padding: 10px;
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    color: rgb(114, 107, 126);
+}
+
+.logo-container{
+    padding-bottom: 2px;
+}
+
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
+}
