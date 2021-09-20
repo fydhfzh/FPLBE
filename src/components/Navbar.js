@@ -13,9 +13,9 @@ function Navbar() {
                             <Link to='/' className="logo">CVD</Link>  
                             </div> 
                             <div className="nav-item">
+                            <Link to='/' className="nav-item">Home</Link> 
+                            <Link to='/about' className="nav-item">About</Link>
                             <Link to='/login' className="nav-item">Log In</Link>
-                             <Link to='/about' className="nav-item">About</Link>
-                             <Link to='/' className="nav-item">Home</Link> 
                             </div>
                               
                     </div>
