@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from './pages/home'
-import About from './pages/about'
-import Login from './pages/login'
-import Data from './pages/Data'
+import Home from './pages/Home/home'
+import About from './pages/About/about'
+import Login from './pages/Login/login'
+import Data from './pages/Data/Data'
 
 function routes() {
     return (

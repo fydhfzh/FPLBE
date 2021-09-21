@@ -1,5 +1,5 @@
 import React from 'react';
-import GraphStats from '../components/GraphStats';
+import FetchData from '../FetchData';
 
 
 function Data() {
@@ -8,7 +8,7 @@ function Data() {
         <div>
             <h1>Data statistik covid per-bulan</h1>
             <div className="graph-container">
-                <GraphStats/>     
+                <FetchData />
              </div>
         </div>
         

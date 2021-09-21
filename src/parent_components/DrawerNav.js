@@ -43,7 +43,7 @@ import { Box, VStack, StackDivider, HStack } from "@chakra-ui/react";
                     <Link to='/data' onClick={onClose}>Data</Link>
                 </Box>
                 <Box>
-                    <Link to='/login' onClick={onClose}>Log In</Link>
+                    <Link to='/login' target="_blank" onClick={onClose}>Log In</Link>
                 </Box>
               </VStack>
             </DrawerBody>
