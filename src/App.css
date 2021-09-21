@@ -10,6 +10,19 @@
     background: linear-gradient(to right, #d3d6bf, #b2cc1d);
 }
 
+/* .graph-container{
+    box-shadow: cadetblue;
+    border: 2px solid blue;
+} */
+
+.recharts-wrapper{
+    margin: auto;
+}
+
+.center{
+    display: block;
+    margin: 2px auto;
+}
 
 .info-button{
     margin-bottom: 3px;
