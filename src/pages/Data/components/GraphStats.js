@@ -1,16 +1,27 @@
 import React from 'react'
-import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 function GraphStats({data}) {
+    const Data =[
+        {
+            name:"Confirmed",
+            uv:data.confirmed,
+        },
+        {
+            name:"Deaths",
+            uv:data.deaths
+        }
+    ]
     return (
         <div>
             {data.confirmed}
-            <LineChart width={1000} height ={400} data={data}>
-                <Line type="monotone" dataKey="deaths" stroke="#8884d8" strokeWidth="3" />
-                {/* <Line type="monotone" dataKey="uv" stroke="red" strokeWidth="3" /> */}
-                <CartesianGrid stroke="#ccc" />
+            <BarChart width={500} height ={400} data={Data} barSize={50}>
+                <Bar dataKey="uv" fill="#8884d8" />
+                {/* <Tooltip />
+                <Legend /> */}
+                <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name" fontSize="12px"/>
                 <YAxis fontSize="12px"/>
-           </LineChart>
+           </BarChart>
         </div>
     )
 }
