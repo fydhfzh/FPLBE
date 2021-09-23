@@ -1,27 +1,22 @@
-import React, {PureComponent} from 'react'
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React from 'react'
+import { BarChart, Bar,  XAxis, YAxis, Tooltip,   } from 'recharts';
 
 
 
-function GraphStats({data}) {
+function GraphNew({data}) {
     const Data =[
         {
             name:"Cases",
-            Total: parseInt(data["Total Cases_text"].replace(/,/g,'')),
+            New: parseInt(data["New Cases_text"].replace(/,/g,'')),
            
         },
         {
             name:"Deaths",
-            Total: parseInt(data["Total Deaths_text"].replace(/,/g,'')),
+            New: parseInt(data["New Deaths_text"].replace(/,/g,'')),
             
-        },
-        {
-            name:"Recovered",
-            Total: parseInt(data["Total Recovered_text"].replace(/,/g,'')),
-        
         }
     ]    
-    
+    console.log(Data[0].Total);
     return (
         <div>
           
@@ -37,8 +32,7 @@ function GraphStats({data}) {
                     />    
                     <XAxis dataKey="name" fontSize="15px"/>
                     <YAxis fontSize="12px"/>
-                    <Bar dataKey="Total"fill="#8884d8" />
-                  
+                    <Bar dataKey="New" stackId="a" fill="#82ca9d" />
             </BarChart>  
         </div>
        
@@ -46,4 +40,4 @@ function GraphStats({data}) {
     )
 }
 
-export default GraphStats
+export default GraphNew

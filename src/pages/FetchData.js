@@ -1,22 +1,21 @@
 import { useState } from 'react';
-import GraphStats from './Data/components/GraphStats';
+import { Center } from "@chakra-ui/react"
 import {
   Box,
-  Spacer,
   Flex,
   FormControl,
   FormLabel,
-  Spinner,
   Input,
-  Button,
-  ButtonGroup
-} from "@chakra-ui/react";  
-import { Label } from 'recharts';
+  Button} from "@chakra-ui/react";  
+import { Grid, GridItem } from "@chakra-ui/react"
+import DataWidget from './Data/components/DataWidget';
+import GraphDisplay from './Data/components/GraphDisplay';
+import InputForm from './Data/components/InputForm';
 
 const FetchData = (props) => {
   const [input, setInput] = useState('');
   const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
+  const [, setError] = useState(null);
 
   // useEffect(() => {
   //   fetch('https://covid-api.mmediagroup.fr/v1/cases%27)
@@ -34,7 +33,7 @@ const FetchData = (props) => {
   //   console.log(data);
   // }, []);
 
-  function capitalize(string) {
+function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
   const search = async () => {
@@ -66,22 +65,23 @@ const FetchData = (props) => {
   };
 
   return (
-    <Flex direction="row" width="25%">
-        <FormControl onSubmit={handleSubmit} border="2px solid #b2cc1d" borderRadius="10px" padding="20px" >
-            <FormLabel fontSize="20pt">Select country</FormLabel>
-            <Input
-            w="90%"
-            type='text'
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder='Search country for COVID-19 information'
-            />
-            <Button mt={3} ml={1} background="#a0b046" type='submit' onClick={handleSubmit}>Search</Button>
-      </FormControl>
-      <Box>
-        {data ? <GraphStats data={data}/> : ''}
-      </Box>
-    </Flex>
+    <Grid>
+        <Center>
+          <Grid marginTop={20} width={1000}>
+          <GridItem>
+              <InputForm handleSubmit={handleSubmit} input={input} setInput={setInput}/>
+          </GridItem>
+
+          <GridItem>
+            <GraphDisplay data={data} />
+          </GridItem>
+          <GridItem marginTop={10}>
+            {data? <DataWidget />:''}
+          </GridItem>
+        </Grid>
+      </Center>
+    </Grid>
+    
   );
 };
 
