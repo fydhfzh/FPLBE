@@ -40,13 +40,16 @@ import { Box, VStack, StackDivider, HStack } from "@chakra-ui/react";
                     <Link to='/' onClick={onClose}>Home</Link> 
                 </Box>
                 <Box>
-                    <Link to='/login' onClick={onClose}>Log In</Link>
+                    <Link to='/data' onClick={onClose}>Data</Link>
+                </Box>
+                <Box>
+                    <Link to='/login' target="_blank" onClick={onClose}>Log In</Link>
                 </Box>
               </VStack>
             </DrawerBody>
   
-            <DrawerFooter borderTopWidth="1px">
-               <HStack>
+            <DrawerFooter borderTopWidth="1px" >
+               <HStack w="100%">
                     <Box>
                        <InfoIcon className="info-button" cursor="pointer"/>
                     </Box>
