@@ -9,14 +9,13 @@ function Navbar() {
     return (
         <div>
             <Router>
-                <div>
                     <div className="navbar">
                             <div className="logo-container">
                             <Link to='/' className="logo">CVD</Link>  
                             </div> 
                             <DrawerNav/>
                     </div>
-                </div>
+              
                 <Routes/>
             </Router>
         </div>

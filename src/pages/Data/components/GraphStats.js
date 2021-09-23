@@ -18,7 +18,7 @@ function GraphStats({data}) {
                 <Bar dataKey="uv" fill="#8884d8" />
                 {/* <Tooltip />
                 <Legend /> */}
-                <CartesianGrid strokeDasharray="3 3" />
+                {/* <CartesianGrid strokeDasharray="3 3" /> */}
                 <XAxis dataKey="name" fontSize="12px"/>
                 <YAxis fontSize="12px"/>
            </BarChart>

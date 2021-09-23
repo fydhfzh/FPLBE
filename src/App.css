@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
 .navbar{
     padding: 10px;
@@ -8,12 +9,11 @@
     position: sticky;
     top: 0;
     background: linear-gradient(to right, #d3d6bf, #b2cc1d);
+    min-width: none;
+    
 }
 
-/* .graph-container{
-    box-shadow: cadetblue;
-    border: 2px solid blue;
-} */
+
 
 .recharts-wrapper{
     margin: auto;
@@ -48,4 +48,8 @@
     cursor:pointer;
     margin-top: 5px;
     font-size: 30px;
+}
+
+.tittle{
+    font-family: 'Oleo Script', cursive;
 }
