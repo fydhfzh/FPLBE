@@ -5,7 +5,6 @@ import Navbar from './parent_components/Navbar';
 import { ChakraProvider } from "@chakra-ui/react"
 import Footer from './parent_components/Footer';
 
-
 function App() {
   return (
     <ChakraProvider>
