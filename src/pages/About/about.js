@@ -1,23 +1,24 @@
 import React from 'react'
+import AboutUs from './components/AboutUs'
+import { Grid, GridItem } from "@chakra-ui/react"
+import Journey from './components/Journey'
+import { Image, Box } from "@chakra-ui/react"
+import Footer from '../../parent_components/Footer'
 
 export default function about() {
     return (
-        <div>
-            <h1>Developer List</h1>
-            <div>
-                <div><strong>Admin 1</strong></div>
-                <ul>
-                    <li>Nama: Fayyadh</li>
-                    <li>NRP: 5025201164</li>
-                </ul>
-            </div>
-            <div>
-                <div><strong>Admin 2</strong></div>
-                <ul>
-                    <li>Nama: Afdal</li>
-                    <li>NRP: 5025201164</li>
-                </ul>
-            </div>
-        </div>
+        <Grid>
+            <GridItem >
+                 <AboutUs />
+            </GridItem>
+            <GridItem>
+                <Journey />
+            </GridItem>
+            <GridItem>
+                <Footer/>
+            </GridItem>
+        </Grid>
+        
+
     )
 }
