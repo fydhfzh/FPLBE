@@ -23,7 +23,6 @@ function Navbar() {
     return (
         <div>
             <Router>
-                <div>
                     <Flex className="navbar">
                             <div className="logo-container">
                                 <Link to='/' className="logo">CVD</Link>  
@@ -31,7 +30,6 @@ function Navbar() {
                             <IconButton aria-label="Search database" w="40px" h="40px" ml={3} mb={1} border="2px solid #fff" icon={btnIcon === 'light'? <SunIcon color="yellow"/> : <MoonIcon color="#fff"/>}  onClick={handleClick}></IconButton>
                             <DrawerNav/>
                     </Flex>
-                </div>
                 <Routes/>
             </Router>
         </div>

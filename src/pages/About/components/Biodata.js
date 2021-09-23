@@ -1,8 +1,7 @@
 import React from 'react'
 import { Grid, GridItem } from "@chakra-ui/react"
-import { Image, Box } from "@chakra-ui/react"
-import { Center, Square, Circle } from "@chakra-ui/react"
-import { Text } from "@chakra-ui/react"
+import Afdal from './Afdal'
+import Fayyadh from './Fayyadh'
 
 
 function Biodata() {
@@ -10,12 +9,14 @@ function Biodata() {
         <div>
             <Grid
              templateRows="repeat(2, 1fr)"
-             height={700}>
+             borderLeftWidth={1}
+             height={700}
+             paddingLeft={4}>
                  <GridItem rowSpan={1} color="white">
-                     Afdal
+                     <Afdal />
                  </GridItem>
                  <GridItem rowSpan={1} color="white">
-                     Fayyadh
+                     <Fayyadh />
                  </GridItem>
             </Grid>
         </div>
