@@ -39,10 +39,22 @@ const FetchData = (props) => {
   }
   const search = async () => {
     try {
-    const response = await fetch('https://covid-api.mmediagroup.fr/v1/cases');
+    const response = await fetch('https://covid-19.dataflowkit.com/v1');
     const data = await response.json();
     // console.log(response);
-    setData(data[capitalize(input)].All);
+    // setData(data[capitalize(input)].All);
+    // setData(data[data.indexOf(capitalize(input))].Country_text);
+    let countryId;
+    for(var i = 0; i < data.length; i++){
+      if(data[i].Country_text === capitalize(input)){
+        countryId = i;
+        break;
+      }
+      countryId = -1;
+    }
+
+    if(countryId !== -1) setData(data[countryId]);
+    else setData([]);
     } catch (error) {
       setError(error);
     }

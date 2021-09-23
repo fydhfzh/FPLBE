@@ -1,14 +1,26 @@
 import React from 'react'
 import { BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 function GraphStats({data}) {
+
+    console.log(data['Active Cases_text']);
+
     const Data =[
         {
-            name:"Confirmed",
-            uv:data.confirmed,
+            name:"Active Cases",
+            uv:Number(data[5])
         },
         {
             name:"Deaths",
             uv:data.deaths
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
         }
     ]
 
