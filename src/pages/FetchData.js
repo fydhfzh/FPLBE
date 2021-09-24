@@ -52,7 +52,7 @@ const FetchData = (props) => {
       }
       countryId = -1;
     }
-
+    
     if(countryId !== -1) setData(data[countryId]);
     else setData([]);
     } catch (error) {

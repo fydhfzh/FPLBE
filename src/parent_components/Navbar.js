@@ -9,16 +9,16 @@ import { MoonIcon, SunIcon} from '@chakra-ui/icons';
 
 function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
-    const navbarBackground = useColorModeValue("#b2cc1d","#070805");
+    const navbarBorder = useColorModeValue("#b2cc1d", "#fff");
 
     return (
         <div>
             <Router>
-                    <Flex className="navbar" background={navbarBackground} borderBottom="2px solid #fff">
+                    <Flex className="navbar" background="transparent" borderBottom="3px solid" borderColor={navbarBorder}>
                             <div className="logo-container">
                                 <Link to='/' className="logo">CVD</Link>  
                             </div> 
-                            <IconButton aria-label="Search database" w="40px" h="40px" ml={3} mb={1} border="1px solid #fff" icon={colorMode=== 'light'? <SunIcon /> : <MoonIcon />}  onClick={toggleColorMode}></IconButton>
+                            <IconButton aria-label="Search database" w="40px" h="40px" ml={3} mb={1} icon={colorMode=== 'light'? <SunIcon /> : <MoonIcon />}  onClick={toggleColorMode}></IconButton>
                             <DrawerNav/>
                     </Flex>
                 <Routes/>
