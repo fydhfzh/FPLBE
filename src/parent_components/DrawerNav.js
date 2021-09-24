@@ -11,9 +11,9 @@ import {
   } from "@chakra-ui/react";
 import { HamburgerIcon, InfoIcon } from "@chakra-ui/icons";
 import { Link } from 'react-router-dom';
-import { Box, VStack, StackDivider, HStack } from "@chakra-ui/react";
+import { Flex, Box, VStack, StackDivider, HStack } from "@chakra-ui/react";
 
-  function DrawerExample() {
+  function DrawerExample({drawerBg}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
   
@@ -27,7 +27,7 @@ import { Box, VStack, StackDivider, HStack } from "@chakra-ui/react";
           finalFocusRef={btnRef}
         >
           <DrawerOverlay />
-          <DrawerContent bg="#d3d6bf">
+          <DrawerContent bg={drawerBg}>
             <DrawerCloseButton />
             <DrawerHeader>CVD</DrawerHeader>
   
