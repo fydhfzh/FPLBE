@@ -14,16 +14,16 @@ function AboutUs() {
                 templateRows="repeat(2, 1fr)"
                 templateColumns="repeat(2, 1fr)"
                 >
-                <GridItem rowSpan={1} bg="#070805"> 
-                   <Box padding={12} color="#b2cc1d" marginTop={20} marginLeft={10}>
+                <GridItem rowSpan={1}> 
+                   <Box padding={12}  marginTop={20} marginLeft={10}>
                     <Text fontSize="6xl" className="tittle">About Us</Text>
                     <Text fontSize="2xl">Second-year Informatics students at Institut Teknologi Sepuluh Nopember, Surabaya, who are eager to learn Software Engineering.</Text>
                    </Box>
                 </GridItem>   
-                <GridItem rowSpan={2} bg="#070805">
+                <GridItem rowSpan={2} >
                         <Biodata/>    
                 </GridItem>
-                <GridItem rowSpan={1} bg="#070805" color="white" >  
+                <GridItem rowSpan={1}  >  
                    <Text padding={12} marginTop={10} marginLeft={10}>
                     Software Engineering has been our interest since entering University.
                     Having a chance to learn something new is what we are looking for.

@@ -21,19 +21,19 @@ function Afdal() {
                  I'm currently learning and trying to master HTML, CSS, JS and React,js . 
                 Besides programming, I usually read novels and play games in my freetime.
             </Text>
-            <Text color="#d3d6bf" marginTop={5}>CONTACT</Text>
+            <Text  marginTop={5}>CONTACT</Text>
                 <Grid
                 templateColumns="repeat(3, 35px)"
                 marginTop={3}
                 >
                     <GridItem rowSpan={1}>
-                        <GrFacebookOption onClick={() => {window.open("https://www.facebook.com/afdal.abdallah/")}} cursor="pointer" color="white" size="24px" alt="fb"/>
+                        <GrFacebookOption onClick={() => {window.open("https://www.facebook.com/afdal.abdallah/")}} cursor="pointer" size="24px" alt="fb"/>
                     </GridItem>
                     <GridItem rowSpan={1}>
-                        <GrInstagram onClick={()=>{window.open("https://www.instagram.com/afdalabdallah/")}} cursor="pointer" color="white" size="24px" alt="ig"/>
+                        <GrInstagram onClick={()=>{window.open("https://www.instagram.com/afdalabdallah/")}} cursor="pointer" size="24px" alt="ig"/>
                     </GridItem>
                     <GridItem rowSpan={1}>
-                        <GrLinkedin onClick={()=>{window.open("https://www.linkedin.com/in/muhammad-afdal-abdallah-808183201/")}} cursor="pointer" color="white" size="24px" alt="lk" />
+                        <GrLinkedin onClick={()=>{window.open("https://www.linkedin.com/in/muhammad-afdal-abdallah-808183201/")}} cursor="pointer" size="24px" alt="lk" />
                     </GridItem>
                 </Grid>
         </GridItem>

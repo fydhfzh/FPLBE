@@ -12,10 +12,10 @@ function Biodata() {
              borderLeftWidth={1}
              height={700}
              paddingLeft={4}>
-                 <GridItem rowSpan={1} color="white">
+                 <GridItem rowSpan={1} >
                      <Afdal />
                  </GridItem>
-                 <GridItem rowSpan={1} color="white">
+                 <GridItem rowSpan={1}>
                      <Fayyadh />
                  </GridItem>
             </Grid>

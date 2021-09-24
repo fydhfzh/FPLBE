@@ -5,10 +5,10 @@ import { Text } from "@chakra-ui/react"
 
 function Journey() {
     return (
-        <Center height={400} bg="#070805">
-            <Box height={300} width={1000} bg="#0F0D0F" borderRadius={2} marginTop={5} marginBottom={20} color="white">
+        <Center height={400} >
+            <Box height={300} width={1000}  borderRadius={2} marginTop={5} marginBottom={20}>
                 <Center marginTop={8}>
-                    <Text fontSize="6xl" className="tittle" color="#b2cc1d">Our Journey</Text>
+                    <Text fontSize="6xl" className="tittle">Our Journey</Text>
                 </Center>
                 <Center>
                     <Text width={700} align="center">

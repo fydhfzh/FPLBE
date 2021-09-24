@@ -37,7 +37,7 @@ function GraphStats({data}) {
                     />    
                     <XAxis dataKey="name" fontSize="15px"/>
                     <YAxis fontSize="12px"/>
-                    <Bar dataKey="Total"fill="#8884d8" />
+                    <Bar dataKey="Total" fill="#8884d8" />
                   
             </BarChart>  
         </div>
