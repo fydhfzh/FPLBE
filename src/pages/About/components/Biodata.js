@@ -10,6 +10,7 @@ function Biodata() {
             <Grid
              templateRows="repeat(2, 1fr)"
              borderLeftWidth={1}
+             borderLeftColor="#b2cc1d"
              height={700}
              paddingLeft={4}>
                  <GridItem rowSpan={1} >

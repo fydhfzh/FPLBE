@@ -1,16 +1,10 @@
 import { useState } from 'react';
 import { Center } from "@chakra-ui/react"
-import {
-  Box,
-  Flex,
-  FormControl,
-  FormLabel,
-  Input,
-  Button} from "@chakra-ui/react";  
 import { Grid, GridItem } from "@chakra-ui/react"
 import DataWidget from './Data/components/DataWidget';
 import GraphDisplay from './Data/components/GraphDisplay';
 import InputForm from './Data/components/InputForm';
+import Footer from '../parent_components/Footer';
 
 const FetchData = (props) => {
   const [input, setInput] = useState('');
@@ -68,18 +62,20 @@ function capitalize(string) {
     <Grid>
         <Center>
           <Grid marginTop={20} width={1000}>
-          <GridItem>
-              <InputForm handleSubmit={handleSubmit} input={input} setInput={setInput}/>
-          </GridItem>
-
-          <GridItem>
-            <GraphDisplay data={data} />
-          </GridItem>
-          <GridItem marginTop={10}>
-            {data? <DataWidget />:''}
-          </GridItem>
-        </Grid>
-      </Center>
+            <GridItem>
+                <InputForm handleSubmit={handleSubmit} input={input} setInput={setInput}/>
+            </GridItem>
+            <GridItem>
+              <GraphDisplay data={data} />
+            </GridItem>
+            <GridItem marginTop={10}>
+              {data? <DataWidget />: null}
+            </GridItem>
+            <GridItem marginTop={data ? 50 : 200}>
+              <Footer />
+            </GridItem>
+          </Grid>
+        </Center> 
     </Grid>
     
   );

@@ -16,7 +16,7 @@ function GraphNew({data}) {
             
         }
     ]    
-    console.log(Data[0].Total);
+    
     return (
         <div>
           

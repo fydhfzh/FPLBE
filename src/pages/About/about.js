@@ -2,20 +2,19 @@ import React from 'react'
 import AboutUs from './components/AboutUs'
 import { Grid, GridItem } from "@chakra-ui/react"
 import Journey from './components/Journey'
-import { Image, Box } from "@chakra-ui/react"
 import Footer from '../../parent_components/Footer'
 
 export default function about() {
     return (
         <Grid>
-            <GridItem >
+            <GridItem marginTop={5}>
                  <AboutUs />
             </GridItem>
             <GridItem>
                 <Journey />
             </GridItem>
             <GridItem>
-                <Footer/>
+                <Footer />
             </GridItem>
         </Grid>
         

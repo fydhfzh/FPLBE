@@ -11,7 +11,7 @@ import {
   } from "@chakra-ui/react";
 import { HamburgerIcon, InfoIcon } from "@chakra-ui/icons";
 import { Link } from 'react-router-dom';
-import { Flex, Box, VStack, StackDivider, HStack } from "@chakra-ui/react";
+import { Box, VStack, StackDivider, HStack } from "@chakra-ui/react";
 
   function DrawerExample({drawerBg}) {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -43,7 +43,7 @@ import { Flex, Box, VStack, StackDivider, HStack } from "@chakra-ui/react";
                     <Link to='/data' onClick={onClose}>Data</Link>
                 </Box>
                 <Box>
-                    <Link to='/login' target="_blank" onClick={onClose}>Log In</Link>
+                    <Link to='/login'  onClick={onClose}>Log In</Link>
                 </Box>
               </VStack>
             </DrawerBody>

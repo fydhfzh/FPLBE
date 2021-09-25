@@ -1,12 +1,6 @@
 import React from 'react'
-import { Center, Square, Circle, Text } from "@chakra-ui/react"
-import {
-  Box,
-  Flex,
-  FormControl,
-  FormLabel,
-  Input,
-  Button} from "@chakra-ui/react";  
+import { Center, Text } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react";  
 
 function DataWidget() {
     return (

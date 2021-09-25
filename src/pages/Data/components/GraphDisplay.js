@@ -1,7 +1,7 @@
 import React from 'react'
 import GraphStats from './GraphStats';
 import GraphNew from './GraphNew';
-import { Center, Square, Circle, Text } from "@chakra-ui/react"
+import { Center, Text } from "@chakra-ui/react"
 import { Box } from "@chakra-ui/react";  
 import { HStack } from "@chakra-ui/react";
 

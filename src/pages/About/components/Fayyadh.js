@@ -1,7 +1,6 @@
 import React from 'react'
 import { Grid, GridItem } from "@chakra-ui/react"
-import { Image, Box } from "@chakra-ui/react"
-import { Link } from '@chakra-ui/react';
+import { Image } from "@chakra-ui/react"
 import { Text } from "@chakra-ui/react"
 import { GrFacebookOption, GrInstagram, GrLinkedin } from 'react-icons/gr'
 

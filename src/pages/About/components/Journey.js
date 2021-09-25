@@ -6,7 +6,7 @@ import { Text } from "@chakra-ui/react"
 function Journey() {
     return (
         <Center height={400} >
-            <Box height={300} width={1000}  borderRadius={2} marginTop={5} marginBottom={20}>
+            <Box height={300} width={1000}  borderRadius={2} marginTop={5} marginBottom={20} borderWidth={2} borderColor="#b2cc1d">
                 <Center marginTop={8}>
                     <Text fontSize="6xl" className="tittle">Our Journey</Text>
                 </Center>

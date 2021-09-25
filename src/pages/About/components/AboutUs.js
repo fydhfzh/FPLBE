@@ -1,8 +1,8 @@
 import React from 'react'
 import { Grid, GridItem } from "@chakra-ui/react"
-import { Image, Box } from "@chakra-ui/react"
-import { Center, Square, Circle } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 import { Text } from "@chakra-ui/react"
+import { Divider } from '@chakra-ui/layout'
 import Biodata from './Biodata'
 
 
