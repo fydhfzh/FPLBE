@@ -68,18 +68,17 @@ function capitalize(string) {
     <Grid>
         <Center>
           <Grid marginTop={20} width={1000}>
-          <GridItem>
-              <InputForm handleSubmit={handleSubmit} input={input} setInput={setInput}/>
-          </GridItem>
-
-          <GridItem>
-            <GraphDisplay data={data} />
-          </GridItem>
-          <GridItem marginTop={10}>
-            {data? <DataWidget />:''}
-          </GridItem>
-        </Grid>
-      </Center>
+            <GridItem>
+                <InputForm handleSubmit={handleSubmit} input={input} setInput={setInput}/>
+            </GridItem>
+            <GridItem>
+              <GraphDisplay data={data} />
+            </GridItem>
+            <GridItem marginTop={10}>
+              {data? <DataWidget />: null}
+            </GridItem>
+          </Grid>
+        </Center> 
     </Grid>
     
   );

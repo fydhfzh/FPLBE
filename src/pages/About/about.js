@@ -14,9 +14,6 @@ export default function about() {
             <GridItem>
                 <Journey />
             </GridItem>
-            <GridItem>
-                <Footer/>
-            </GridItem>
         </Grid>
         
 

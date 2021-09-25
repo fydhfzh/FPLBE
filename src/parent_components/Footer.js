@@ -7,7 +7,7 @@ import { GrFacebookOption, GrInstagram, GrLinkedin } from 'react-icons/gr'
 
 function Footer() {
     return (
-        <Box  height={300} bg="#070805" >
+        <Box  height={300} bg="transparent" >
             <Center>
                 <Box height={300} width={1300} borderTopWidth={1} borderTopColor="#d3d6bf">
                     <Box marginLeft={100} marginTop={70} width={300}>
