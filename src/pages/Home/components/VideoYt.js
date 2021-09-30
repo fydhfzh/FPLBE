@@ -1,7 +1,5 @@
 import React from 'react'
-import { Flex, Box, Container, Divider, Stack, Text, Spacer, useDisclosure, Collapse, Link, AspectRatio, Heading} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
+import { Box, Text, Collapse, AspectRatio} from '@chakra-ui/react'
 
 function VideoYt({isOpen, onToggle}) {
     return (
@@ -11,9 +9,8 @@ function VideoYt({isOpen, onToggle}) {
             <Collapse in={isOpen}>
                 <AspectRatio ratio={16/9}>
                     <iframe
-                        //https://www.youtube.com/embed/UrcDLopNPV8
                         title="coronavirus news"
-                        src="https://www.youtube.com/embed/nnRZW0uk5LQ"
+                        src="https://www.youtube.com/embed/UrcDLopNPV8"
                         allowFullScreen
                      />
                 </AspectRatio>

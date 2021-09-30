@@ -1,7 +1,5 @@
 import React from 'react'
-import { Flex, Box, Container, Divider, Stack, Text, Spacer, useDisclosure, Collapse, Link, AspectRatio, Heading} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons';
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
+import { Box, Container, Divider } from '@chakra-ui/react'
 
 function OpeningHead() {
     return (
